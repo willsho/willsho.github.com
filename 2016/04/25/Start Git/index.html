@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="ReferenceBasic GuideGit教程 - 廖雪峰的官方网站git - 简明指南Git Book常用 Git 命令清单猴子都能懂的GIT入门GitHub和SourceTree入门教程
+####管理公钥推荐使用GitosisGitosis - https://github.com/res0nat0r/gitosisGitosis配置手记 - http://debugo.com/gitos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Start Git">
+<meta property="og:url" content="http://willsho.gihub.io/2016/04/25/Start Git/index.html">
+<meta property="og:site_name" content="Will's Notes">
+<meta property="og:description" content="ReferenceBasic GuideGit教程 - 廖雪峰的官方网站git - 简明指南Git Book常用 Git 命令清单猴子都能懂的GIT入门GitHub和SourceTree入门教程
+####管理公钥推荐使用GitosisGitosis - https://github.com/res0nat0r/gitosisGitosis配置手记 - http://debugo.com/gitos">
+<meta property="og:updated_time" content="2016-04-25T05:29:11.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Start Git">
+<meta name="twitter:description" content="ReferenceBasic GuideGit教程 - 廖雪峰的官方网站git - 简明指南Git Book常用 Git 命令清单猴子都能懂的GIT入门GitHub和SourceTree入门教程
+####管理公钥推荐使用GitosisGitosis - https://github.com/res0nat0r/gitosisGitosis配置手记 - http://debugo.com/gitos">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Start Git</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+    <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+    <!-- jquery -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/willsho">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2017/01/31/hello-world/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/04/23/Start Sublime/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://willsho.gihub.io/2016/04/25/Start Git/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://willsho.gihub.io/2016/04/25/Start Git/&text=Start Git"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://willsho.gihub.io/2016/04/25/Start Git/&is_video=false&description=Start Git"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Start Git&body=Check out this article: http://willsho.gihub.io/2016/04/25/Start Git/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://willsho.gihub.io/2016/04/25/Start Git/&name=Start Git&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Reference"><span class="toc-number">1.</span> <span class="toc-text">Reference</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basic-Guide"><span class="toc-number">1.1.</span> <span class="toc-text">Basic Guide</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git-Client"><span class="toc-number">1.2.</span> <span class="toc-text">Git Client</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git-teamwork-guide"><span class="toc-number">1.3.</span> <span class="toc-text">Git teamwork guide</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Command-in-common-use"><span class="toc-number">2.</span> <span class="toc-text">Command in common use</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Start Git
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Will's Notes</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2016-04-25T04:40:00.000Z" itemprop="datePublished">2016-04-25</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><h4 id="Basic-Guide"><a href="#Basic-Guide" class="headerlink" title="Basic Guide"></a>Basic Guide</h4><p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">Git教程 - 廖雪峰的官方网站</a><br><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">git - 简明指南</a><br><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Git Book</a><br><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="external">常用 Git 命令清单</a><br><a href="http://backlogtool.com/git-guide/cn/" target="_blank" rel="external">猴子都能懂的GIT入门</a><br><a href="http://blog.csdn.net/collonn/article/details/39259227" target="_blank" rel="external">GitHub和SourceTree入门教程</a></p>
+<p>####<br>管理公钥推荐使用Gitosis<br>Gitosis - <a href="https://github.com/res0nat0r/gitosis" target="_blank" rel="external">https://github.com/res0nat0r/gitosis</a><br>Gitosis配置手记 - <a href="http://debugo.com/gitosis/" target="_blank" rel="external">http://debugo.com/gitosis/</a><br>管理权限推荐使用Gitolite<br>Gitolite - <a href="https://github.com/sitaramc/gitolite" target="_blank" rel="external">https://github.com/sitaramc/gitolite</a></p>
+<h4 id="Git-Client"><a href="#Git-Client" class="headerlink" title="Git Client"></a>Git Client</h4><p>Git - <a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a><br>TortoiseGit - <a href="https://tortoisegit.org/" target="_blank" rel="external">https://tortoisegit.org/</a><br>SourceTree - <a href="https://www.sourcetreeapp.com/" target="_blank" rel="external">https://www.sourcetreeapp.com/</a></p>
+<h4 id="Git-teamwork-guide"><a href="#Git-teamwork-guide" class="headerlink" title="Git teamwork guide"></a>Git teamwork guide</h4><p>Git 使用规范流程 - <a href="http://www.ruanyifeng.com/blog/2015/08/git-use-process.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/08/git-use-process.html</a><br>团队中的 Git 实践 - <a href="https://ourai.ws/posts/working-with-git-in-team/" target="_blank" rel="external">https://ourai.ws/posts/working-with-git-in-team/</a><br>构家网 git 团队协作使用规范 v2 - <a href="http://wenku.baidu.com/view/e1430d1b7f1922791788e81e" target="_blank" rel="external">http://wenku.baidu.com/view/e1430d1b7f1922791788e81e</a></p>
+<blockquote>
+<p>Git使用规范提醒<br>使用Git过程中，必须通过创建分支进行开发，坚决禁止在主干分支上直接开发。review的同事有责任检查其他同事是否遵循分支规范。<br>在Git中，默认是不会提交空目录的，如果想提交某个空目录到版本库中，需要在该目录下新建一个 .gitignore 的空白文件，就可以提交了<br>把外部文件纳入到自己的 Git 分支来的时候一定要记得是先比对，确认所有修改都是自己修改的，然后再纳入。不然，容易出现代码回溯<br>多人协作时，不要各自在自己的 Git 分支开发，然后发文件合并。正确的方法应该是开一个远程分支，然后一起在远程分支里协作。不然，容易出现代码回溯（即别人的代码被覆盖的情况）<br>每个人提交代码是一定要 git diff 看提交的东西是不是都是自己修改的。如果有不是自己修改的内容，很可能就是代码回溯<br>review 代码的时候如果看到有被删除掉的代码，一定要确实是否是写代码的同事自己删除的。如果不是，很可能就是代码回溯</p>
+</blockquote>
+<h3 id="Command-in-common-use"><a href="#Command-in-common-use" class="headerlink" title="Command in common use"></a>Command in common use</h3><pre><code class="bash">#安装git
+sudo apt-get install git
+yum install git
+
+#创建一个git用户，用来运行git服务
+sudo adduser git
+
+#创建证书使用公钥免密码登录(可选)
+ssh-keygen -t rsa
+vi ~/.ssh/authorized_keys
+
+#初始化Git仓库
+sudo git init --bare sample.git
+sudo chown -R git:git sample.git
+
+#禁用shell登录
+vi /etc/passwd
+git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
+
+#在客户端上克隆远程仓库
+git clone git@server:/srv/sample.git
+</code></pre>
+<pre><code class="bash">#以最基本的Git命令行为例，先下载Git
+https://git-scm.com/download/
+
+#配置git提交用户名和邮箱，定义别名方便区分
+git config --global user.name &quot;你的姓名&quot;
+git config --global user.email &quot;you@example.com&quot;
+
+#克隆仓库
+git clone cap@172.28.70.243:/cap/cap.git
+
+$ git clone cap@172.28.70.243:/cap/cap.git
+Cloning into &#39;cap&#39;...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+
+#测试推送
+touch README
+git add README
+git commit -m &quot;add readme&quot;
+git push origin master
+
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 199 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To cap@172.28.70.243:/cap/cap.git
+ * [new branch]      master -&gt; master
+</code></pre>
+<pre><code class="bash"> #初始化
+git init //创建
+git clone /path/to/repository //检出
+git config --global user.email &quot;you@example.com&quot; //配置email
+git config --global user.name &quot;Name&quot; //配置用户名
+
+#操作
+git add &lt;file&gt; // 文件添加，A → B
+git add . // 所有文件添加，A → B
+
+git commit -m &quot;代码提交信息&quot; //文件提交，B → C
+git commit --amend //与上次commit合并, *B → C
+
+git push origin master //推送至master分支, C → D
+git pull //更新本地仓库至最新改动， D → A
+git fetch //抓取远程仓库更新， D → C
+
+git log //查看提交记录
+git status //查看修改状态
+git diff//查看详细修改内容
+git show//显示某次提交的内容
+
+#撤销操作
+git reset &lt;file&gt;//某个文件索引会回滚到最后一次提交， C → B
+git reset//索引会回滚到最后一次提交， C → B
+git reset --hard // 索引会回滚到最后一次提交， C → B → A
+
+git checkout // 从index复制到workspace， B → A
+git checkout -- files // 文件从index复制到workspace， B → A
+git checkout HEAD -- files // 文件从local repository复制到workspace， C → A
+
+#分支相关
+git checkout -b branch_name //创建名叫“branch_name”的分支，并切换过去
+git checkout master //切换回主分支
+git branch -d branch_name // 删除名叫“branch_name”的分支
+git push origin branch_name //推送分支到远端仓库
+git merge branch_name // 合并分支branch_name到当前分支(如master)
+git rebase //衍合，线性化的自动， D → A
+
+#冲突处理
+git diff //对比workspace与index
+git diff HEAD //对于workspace与最后一次commit
+git diff &lt;source_branch&gt; &lt;target_branch&gt; //对比差异
+git add &lt;filename&gt; //修改完冲突，需要add以标记合并成功
+
+#其他
+gitk //开灯图形化git
+git config color.ui true //彩色的 git 输出
+git config format.pretty oneline //显示历史记录时，每个提交的信息只显示一行
+git add -i //交互式添加文件到暂存区
+</code></pre>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/willsho">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Reference"><span class="toc-number">1.</span> <span class="toc-text">Reference</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Basic-Guide"><span class="toc-number">1.1.</span> <span class="toc-text">Basic Guide</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git-Client"><span class="toc-number">1.2.</span> <span class="toc-text">Git Client</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git-teamwork-guide"><span class="toc-number">1.3.</span> <span class="toc-text">Git teamwork guide</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Command-in-common-use"><span class="toc-number">2.</span> <span class="toc-text">Command in common use</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://willsho.gihub.io/2016/04/25/Start Git/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://willsho.gihub.io/2016/04/25/Start Git/&text=Start Git"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://willsho.gihub.io/2016/04/25/Start Git/&is_video=false&description=Start Git"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Start Git&body=Check out this article: http://willsho.gihub.io/2016/04/25/Start Git/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://willsho.gihub.io/2016/04/25/Start Git/&title=Start Git"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://willsho.gihub.io/2016/04/25/Start Git/&name=Start Git&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 Will Wang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/willsho">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

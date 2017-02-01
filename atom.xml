@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Will&#39;s Notes</title>
+  <subtitle>Blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://willsho.gihub.io/"/>
+  <updated>2016-04-22T04:02:35.000Z</updated>
+  <id>http://willsho.gihub.io/</id>
+  
+  <author>
+    <name>Will Wang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://willsho.gihub.io/2017/01/31/hello-world/"/>
+    <id>http://willsho.gihub.io/2017/01/31/hello-world/</id>
+    <published>2017-01-31T22:29:29.000Z</published>
+    <updated>2016-04-22T04:02:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://willsho.github.io/" target="_blank" rel="external">Will’s Notes</a>!<br>This is my first post.<br>I will share some experience and my opinion about daily life and my work. </p>
+<p>Thank you.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://willsho.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Will’s Notes&lt;/a&gt;!&lt;br&gt;This is my first post.&lt;br&gt;I will shar
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Start Git</title>
+    <link href="http://willsho.gihub.io/2016/04/25/Start%20Git/"/>
+    <id>http://willsho.gihub.io/2016/04/25/Start Git/</id>
+    <published>2016-04-25T04:40:00.000Z</published>
+    <updated>2016-04-25T05:29:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><h4 id="Basic-Guide"><a href="#Basic-Guide" class="headerlink" title="Basic Guide"></a>Basic Guide</h4><p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">Git教程 - 廖雪峰的官方网站</a><br><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">git - 简明指南</a><br><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Git Book</a><br><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="external">常用 Git 命令清单</a><br><a href="http://backlogtool.com/git-guide/cn/" target="_blank" rel="external">猴子都能懂的GIT入门</a><br><a href="http://blog.csdn.net/collonn/article/details/39259227" target="_blank" rel="external">GitHub和SourceTree入门教程</a></p>
+<p>####<br>管理公钥推荐使用Gitosis<br>Gitosis - <a href="https://github.com/res0nat0r/gitosis" target="_blank" rel="external">https://github.com/res0nat0r/gitosis</a><br>Gitosis配置手记 - <a href="http://debugo.com/gitosis/" target="_blank" rel="external">http://debugo.com/gitosis/</a><br>管理权限推荐使用Gitolite<br>Gitolite - <a href="https://github.com/sitaramc/gitolite" target="_blank" rel="external">https://github.com/sitaramc/gitolite</a></p>
+<h4 id="Git-Client"><a href="#Git-Client" class="headerlink" title="Git Client"></a>Git Client</h4><p>Git - <a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a><br>TortoiseGit - <a href="https://tortoisegit.org/" target="_blank" rel="external">https://tortoisegit.org/</a><br>SourceTree - <a href="https://www.sourcetreeapp.com/" target="_blank" rel="external">https://www.sourcetreeapp.com/</a></p>
+<h4 id="Git-teamwork-guide"><a href="#Git-teamwork-guide" class="headerlink" title="Git teamwork guide"></a>Git teamwork guide</h4><p>Git 使用规范流程 - <a href="http://www.ruanyifeng.com/blog/2015/08/git-use-process.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/08/git-use-process.html</a><br>团队中的 Git 实践 - <a href="https://ourai.ws/posts/working-with-git-in-team/" target="_blank" rel="external">https://ourai.ws/posts/working-with-git-in-team/</a><br>构家网 git 团队协作使用规范 v2 - <a href="http://wenku.baidu.com/view/e1430d1b7f1922791788e81e" target="_blank" rel="external">http://wenku.baidu.com/view/e1430d1b7f1922791788e81e</a></p>
+<blockquote>
+<p>Git使用规范提醒<br>使用Git过程中，必须通过创建分支进行开发，坚决禁止在主干分支上直接开发。review的同事有责任检查其他同事是否遵循分支规范。<br>在Git中，默认是不会提交空目录的，如果想提交某个空目录到版本库中，需要在该目录下新建一个 .gitignore 的空白文件，就可以提交了<br>把外部文件纳入到自己的 Git 分支来的时候一定要记得是先比对，确认所有修改都是自己修改的，然后再纳入。不然，容易出现代码回溯<br>多人协作时，不要各自在自己的 Git 分支开发，然后发文件合并。正确的方法应该是开一个远程分支，然后一起在远程分支里协作。不然，容易出现代码回溯（即别人的代码被覆盖的情况）<br>每个人提交代码是一定要 git diff 看提交的东西是不是都是自己修改的。如果有不是自己修改的内容，很可能就是代码回溯<br>review 代码的时候如果看到有被删除掉的代码，一定要确实是否是写代码的同事自己删除的。如果不是，很可能就是代码回溯</p>
+</blockquote>
+<h3 id="Command-in-common-use"><a href="#Command-in-common-use" class="headerlink" title="Command in common use"></a>Command in common use</h3><pre><code class="bash">#安装git
+sudo apt-get install git
+yum install git
+
+#创建一个git用户，用来运行git服务
+sudo adduser git
+
+#创建证书使用公钥免密码登录(可选)
+ssh-keygen -t rsa
+vi ~/.ssh/authorized_keys
+
+#初始化Git仓库
+sudo git init --bare sample.git
+sudo chown -R git:git sample.git
+
+#禁用shell登录
+vi /etc/passwd
+git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
+
+#在客户端上克隆远程仓库
+git clone git@server:/srv/sample.git
+</code></pre>
+<pre><code class="bash">#以最基本的Git命令行为例，先下载Git
+https://git-scm.com/download/
+
+#配置git提交用户名和邮箱，定义别名方便区分
+git config --global user.name &quot;你的姓名&quot;
+git config --global user.email &quot;you@example.com&quot;
+
+#克隆仓库
+git clone cap@172.28.70.243:/cap/cap.git
+
+$ git clone cap@172.28.70.243:/cap/cap.git
+Cloning into &#39;cap&#39;...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+
+#测试推送
+touch README
+git add README
+git commit -m &quot;add readme&quot;
+git push origin master
+
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 199 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To cap@172.28.70.243:/cap/cap.git
+ * [new branch]      master -&gt; master
+</code></pre>
+<pre><code class="bash"> #初始化
+git init //创建
+git clone /path/to/repository //检出
+git config --global user.email &quot;you@example.com&quot; //配置email
+git config --global user.name &quot;Name&quot; //配置用户名
+
+#操作
+git add &lt;file&gt; // 文件添加，A → B
+git add . // 所有文件添加，A → B
+
+git commit -m &quot;代码提交信息&quot; //文件提交，B → C
+git commit --amend //与上次commit合并, *B → C
+
+git push origin master //推送至master分支, C → D
+git pull //更新本地仓库至最新改动， D → A
+git fetch //抓取远程仓库更新， D → C
+
+git log //查看提交记录
+git status //查看修改状态
+git diff//查看详细修改内容
+git show//显示某次提交的内容
+
+#撤销操作
+git reset &lt;file&gt;//某个文件索引会回滚到最后一次提交， C → B
+git reset//索引会回滚到最后一次提交， C → B
+git reset --hard // 索引会回滚到最后一次提交， C → B → A
+
+git checkout // 从index复制到workspace， B → A
+git checkout -- files // 文件从index复制到workspace， B → A
+git checkout HEAD -- files // 文件从local repository复制到workspace， C → A
+
+#分支相关
+git checkout -b branch_name //创建名叫“branch_name”的分支，并切换过去
+git checkout master //切换回主分支
+git branch -d branch_name // 删除名叫“branch_name”的分支
+git push origin branch_name //推送分支到远端仓库
+git merge branch_name // 合并分支branch_name到当前分支(如master)
+git rebase //衍合，线性化的自动， D → A
+
+#冲突处理
+git diff //对比workspace与index
+git diff HEAD //对于workspace与最后一次commit
+git diff &lt;source_branch&gt; &lt;target_branch&gt; //对比差异
+git add &lt;filename&gt; //修改完冲突，需要add以标记合并成功
+
+#其他
+gitk //开灯图形化git
+git config color.ui true //彩色的 git 输出
+git config format.pretty oneline //显示历史记录时，每个提交的信息只显示一行
+git add -i //交互式添加文件到暂存区
+</code></pre>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h3&gt;&lt;h4 id=&quot;Basic-Guide&quot;&gt;&lt;a href=&quot;#Basic-Guide&quot; c
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Start sublime</title>
+    <link href="http://willsho.gihub.io/2016/04/23/Start%20Sublime/"/>
+    <id>http://willsho.gihub.io/2016/04/23/Start Sublime/</id>
+    <published>2016-04-23T07:40:00.000Z</published>
+    <updated>2016-04-23T08:03:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="sublime-text-3-plugin：package-control"><a href="#sublime-text-3-plugin：package-control" class="headerlink" title="sublime text 3 plugin：package control"></a>sublime text 3 plugin：package control</h3><p>Copy the code below. </p>
+<pre><code>import urllib.request,os; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &#39;wb&#39;).write(urllib.request.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;,&#39;%20&#39;)).read())
+</code></pre><p>Open sublime text 3, press ctrl + ~ or Menu &gt; View &gt; Show Console to open cmd, then paste this code and enter.</p>
+<h3 id="Install-emmet-to-develop-web-efficiently"><a href="#Install-emmet-to-develop-web-efficiently" class="headerlink" title="Install emmet to develop web efficiently"></a>Install emmet to develop web efficiently</h3><p>Press ctrl + shift + p to open cmd, then typr </p>
+<pre><code>install package emmet
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;sublime-text-3-plugin：package-control&quot;&gt;&lt;a href=&quot;#sublime-text-3-plugin：package-control&quot; class=&quot;headerlink&quot; title=&quot;sublime text 3 plu
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Use HEXO+Github Pages to build my blog</title>
+    <link href="http://willsho.gihub.io/2016/04/21/Building%20My%20Blog/"/>
+    <id>http://willsho.gihub.io/2016/04/21/Building My Blog/</id>
+    <published>2016-04-21T05:40:00.000Z</published>
+    <updated>2017-02-01T00:47:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h3><p><a href="http://hexo.io" target="_blank" rel="external">Hexo</a><br><a href="https://segmentfault.com/a/1190000004947261#articleHeader5" target="_blank" rel="external">手把手教你使用Hexo + Github Pages搭建个人独立博客</a><br><a href="http://blog.hjtxxx.com/2015/08/13/Hexo-%E4%B8%80-%EF%BC%9A%E5%9C%A8GitHub%E4%B8%8A%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">Hexo(一)：在GitHub上搭建静态博客 | HeyJ丶的技术博客</a><br><a href="http://www.jianshu.com/p/465830080ea9/comments/1234990" target="_blank" rel="external">HEXO+Github,搭建属于自己的博客</a><br><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">hexo你的博客</a><br><a href="http://wiki.jikexueyuan.com/project/hexo-document/" target="_blank" rel="external">极客学院-Hexo中文站</a><br><a id="more"></a></p>
+<h3 id="Recommendable-Hexo-themes"><a href="#Recommendable-Hexo-themes" class="headerlink" title="Recommendable Hexo themes:"></a>Recommendable Hexo themes:</h3><p><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external">Icarus</a><br><a href="(https://github.com/iissnan/hexo-theme-next">NexT</a><br><a href="https://github.com/xiangming/landscape-plus" target="_blank" rel="external">Landscape plus</a><br><a href="https://github.com/joyceim/hexo-theme-apollo" target="_blank" rel="external">Apollo</a><br><a href="https://github.com/SuperKieran/TKL" target="_blank" rel="external">TKL</a></p>
+<h3 id="Some-basic-operation"><a href="#Some-basic-operation" class="headerlink" title="Some basic operation"></a>Some basic operation</h3><h4 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h4><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
+<h4 id="Test-on-local-server"><a href="#Test-on-local-server" class="headerlink" title="Test on local server"></a>Test on local server</h4><pre><code class="bash">$ hexo s
+</code></pre>
+<h4 id="Generate-static-file"><a href="#Generate-static-file" class="headerlink" title="Generate static file"></a>Generate static file</h4><pre><code class="bash">$ hexo g
+</code></pre>
+<h4 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h4><pre><code class="bash">$ hexo d
+</code></pre>
+<h3 id="How-to-display-shortcut-icon"><a href="#How-to-display-shortcut-icon" class="headerlink" title="How to display shortcut icon"></a>How to display shortcut icon</h3><p>\themes\themename\layout\head.ejs</p>
+<p>add</p>
+<pre><code class="html">&lt;link rel=&quot;shoutcut icon&quot; href=&quot;/&quot; /&gt;
+</code></pre>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference:&quot;&gt;&lt;/a&gt;Reference:&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://hexo.io&quot;&gt;Hexo&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000004947261#articleHeader5&quot;&gt;手把手教你使用Hexo + Github Pages搭建个人独立博客&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.hjtxxx.com/2015/08/13/Hexo-%E4%B8%80-%EF%BC%9A%E5%9C%A8GitHub%E4%B8%8A%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&quot;&gt;Hexo(一)：在GitHub上搭建静态博客 | HeyJ丶的技术博客&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.jianshu.com/p/465830080ea9/comments/1234990&quot;&gt;HEXO+Github,搭建属于自己的博客&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/&quot;&gt;hexo你的博客&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wiki.jikexueyuan.com/project/hexo-document/&quot;&gt;极客学院-Hexo中文站&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>To：辛小喵</title>
+    <link href="http://willsho.gihub.io/2016/04/20/to%20you/"/>
+    <id>http://willsho.gihub.io/2016/04/20/to you/</id>
+    <published>2016-04-20T09:15:41.000Z</published>
+    <updated>2016-04-21T16:24:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="么么哒"><a href="#么么哒" class="headerlink" title="么么哒"></a>么么哒</h4><h4 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;么么哒&quot;&gt;&lt;a href=&quot;#么么哒&quot; class=&quot;headerlink&quot; title=&quot;么么哒&quot;&gt;&lt;/a&gt;么么哒&lt;/h4&gt;&lt;h4 id=&quot;晚安&quot;&gt;&lt;a href=&quot;#晚安&quot; class=&quot;headerlink&quot; title=&quot;晚安&quot;&gt;&lt;/a&gt;晚安&lt;/h4&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
