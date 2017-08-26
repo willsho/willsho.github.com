@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="去中心化的三个维度作为区块链存在的主要理由，去中心的定义却含糊不清，这需要澄清一下。去中心化的三个维度编者按：去中心化是个热词。但是究竟什么是去中心化却存在很多异议。为此比特币改良版在线系统Ethereum的创始人之一Vitalik Buterin从结构、政治和逻辑三个维度剖析了去中心化的含义。
+“去中心化”是在加密经济学领域使用最频繁的词之一 ，而且往往被视为区块链存在的全部理由所在，但这个词可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="去中心化的三个维度">
+<meta property="og:url" content="http://willsho.gihub.io/2017/01/27/去中心化的三个维度/index.html">
+<meta property="og:site_name" content="Will's Notes">
+<meta property="og:description" content="去中心化的三个维度作为区块链存在的主要理由，去中心的定义却含糊不清，这需要澄清一下。去中心化的三个维度编者按：去中心化是个热词。但是究竟什么是去中心化却存在很多异议。为此比特币改良版在线系统Ethereum的创始人之一Vitalik Buterin从结构、政治和逻辑三个维度剖析了去中心化的含义。
+“去中心化”是在加密经济学领域使用最频繁的词之一 ，而且往往被视为区块链存在的全部理由所在，但这个词可">
+<meta property="og:updated_time" content="2017-08-26T23:19:22.236Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="去中心化的三个维度">
+<meta name="twitter:description" content="去中心化的三个维度作为区块链存在的主要理由，去中心的定义却含糊不清，这需要澄清一下。去中心化的三个维度编者按：去中心化是个热词。但是究竟什么是去中心化却存在很多异议。为此比特币改良版在线系统Ethereum的创始人之一Vitalik Buterin从结构、政治和逻辑三个维度剖析了去中心化的含义。
+“去中心化”是在加密经济学领域使用最频繁的词之一 ，而且往往被视为区块链存在的全部理由所在，但这个词可">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>去中心化的三个维度</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+    <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+    <!-- jquery -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/willsho">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2017/01/28/Actor-Network Theory/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2017/01/26/奥卡姆剃刀/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&text=去中心化的三个维度"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&is_video=false&description=去中心化的三个维度"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=去中心化的三个维度&body=Check out this article: http://willsho.gihub.io/2017/01/27/去中心化的三个维度/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&name=去中心化的三个维度&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#去中心化的三个维度"><span class="toc-number">1.</span> <span class="toc-text">去中心化的三个维度</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        去中心化的三个维度
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Will's Notes</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-01-27T04:40:00.000Z" itemprop="datePublished">2017-01-27</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="去中心化的三个维度"><a href="#去中心化的三个维度" class="headerlink" title="去中心化的三个维度"></a>去中心化的三个维度</h1><p>作为区块链存在的主要理由，去中心的定义却含糊不清，这需要澄清一下。<br>去中心化的三个维度<br>编者按：去中心化是个热词。但是究竟什么是去中心化却存在很多异议。为此比特币改良版在线系统Ethereum的创始人之一Vitalik Buterin从结构、政治和逻辑三个维度剖析了去中心化的含义。</p>
+<p>“去中心化”是在加密经济学领域使用最频繁的词之一 ，而且往往被视为区块链存在的全部理由所在，但这个词可能也是定义最糟糕的一个。仅仅为了尝试实现去中心化的这一主要目标，以及为了保护和改善它，已经投入了成千上万小时的研究，数十亿美元的哈希能力。而且当讨论开始出现火药味时，某一协议（或者协议扩展）的支持者把对方提案说成“中心化”作为终极大招使出来实在是太过常见的事情了。</p>
+<p>但对于这个词到底是什么含义往往会出现很多的困惑。比方说，我们可以看看下面这个完全毫无帮助但是却不幸地太过常见的示意图：</p>
+<p>去中心化的三个维度</p>
+<p>（a）中心化 （b）去中心化 （c）分布式网络</p>
+<p>现在再来看看Quora上面有关“分布式和去中心化的区别”这一问题的两个回答。第一个回答基本上是对上面这张图的鹦鹉学舌，而第二个回答则要大相径庭，声称“分布式意味着并非所有的交易处理都是在同一个地方完成的，”而“去中心化意味着单个实体不能控制完所有的处理。”与此同时，在Ethereum stack exchange上面得票率最高的回答也给出了类似的图解，但是“去中心化”和“分布式”这两个词却交换了位置！显然，这里有做出澄清的必要。</p>
+<p>三种类型的去中心化</p>
+<p>当大家在讨论软件去中心化的时候，实际上往往有3种不同维度的中心化/去中心化。虽然在一些情况下这些中心化形式往往缺一不可，但通常它们还是彼此相对独立的。这几个维度是：</p>
+<p>结构（去）中心化——系统由多少物理计算机组成？该系统可容忍这些计算机多少台同时发生崩溃？</p>
+<p>政治（去）中心化——有多少个人或者组织最终控制着组成该系统的那些计算机？</p>
+<p>逻辑（去）中心化——该系统展现和维护的界面和数据结构看起来更像是单一的一体式对象呢，还是无定形的一大群？或者用这个问题来启发一下：如果包括提供商和用户在内把你的系统一分为二的话，那两部分是不是还可以继续作为独立单元完全运作？</p>
+<p>我们可以把这三个维度用下面这张表来表示：</p>
+<p>去中心化的三个维度</p>
+<p>要指出的是这些设定还是非常粗糙的，还有待商榷。但我们先稍微过一下这几种情况：</p>
+<p>传统企业是政治中心化（有一个CEO），结构中心化（一个总部）以及逻辑中心化的（并不能真正一分为二）</p>
+<p>民法依赖于一个中心化的法律制定实体，而习惯法是基于许多独立判决的基础上制订的。民法仍然有一些结构上的去中心化，因为有很多法庭仍然是由很大的自由裁量权的，但习惯法的自由裁量权更大。这两个都是逻辑中心化的。</p>
+<p>语言是逻辑去中心化的；Alice和Bob之间讲的英语与Charlie和David之间讲的英语完全不需要一致。语言并不需要一个中心化的基础设施存在，而英语的语法规则也不是由一个人创建或控制的（世界语则是源自Ludwig Zamenhof,的发明，尽管其现在的功能更像是一门无人监管、逐渐演变的活语言）。</p>
+<p>BitTorrent在逻辑上是去中心化的，类似于英语的样子。内容交付网络也类似，但却是被一个公司所控制。</p>
+<p>区块链是政治去中心化（没人控制区块链）、结构去中心化（没有基础设施性的中心失败点）的，但是在逻辑上是中心化的（有一个公认的状态，整个系统行为就像一个计算机一样）。</p>
+<p>很多时候当大家讨论区块链的优点时，他们会描述拥有“一个集中数据库”的便利性；这种中心化是逻辑上的中心化，而且是一种无疑从很多方面来说都是有好处的中心化（尽管IPFS的Juan Benet也希望在可能的情况下推进逻辑去中心化，因为逻辑去中心化系统往往擅长在网络分区中存活，在连接性糟糕的世界各地都工作得很好等；参见Scuttlebot的这篇明确呼吁逻辑去中心化的文章）。</p>
+<p>结构中心化往往导致政治中心化，尽管未必会如此——在正式的民主中，政治家以某种实体的治理形式会面和投票，但这种议事厅的维护者最终并不能因此从中获得任何实质性的决策权。而在一个计算化的系统中，结构上去中心化但政治上却是中心化的情况是有可能发生的——如果有一个在线社区出于便利考虑利用了中心化的论坛，但是却没有一个广泛公认的社会契约，比如约定如果论坛所有者出现恶意行为则每个人都会跑到另一个论坛去。</p>
+<p>逻辑中心化会导致结构去中心化更加困难，但并非不可能——看看去中心化的舆论网络已被证明有效，但却比维护BitTorrent更加困难就知道了。逻辑中心化也使得政治去中心化更加困难——在逻辑中心化的系统中，你是很难仅仅靠“和平共存”来解决争端的。</p>
+<p>去中心化的三个原因</p>
+<p>接下来的问题就是为什么去中心化会有用？这通常会有几种观点：</p>
+<p>可容错——去中心化的系统意外失效的可能性更低，因为它们依靠于许多独立的组件，这些组件不大可能全都失效。</p>
+<p>抗攻击性——对去中心化系统的攻击、摧毁或者操纵的代价要高很多，因为它们缺乏敏感的中心点，对这些中心点发起攻击的成本要比对周边系统发动攻击的经济规模小得多。</p>
+<p>抗共谋——去中心化系统的参与者串通行动，以牺牲其他参与者的利益谋取自身利益的难度要大得多，而企业和政府的领导层就可以串通起来谋求自身利益却损害了不那么协调的市民、客户、员工以及普罗大众的利益。</p>
+<p>这三种观点都是重要的，也是合理的，但如果你开始思考各自应该采用什么协议时这三种观点都会导致一些有趣但不同的结论。如果感兴趣的可以到原文了解进一步的讨论。</p>
+<p><a href="http://36kr.com/p/5063699.html" target="_blank" rel="external">去中心化的三个维度</a></p>
+<p> #这周发现了什么有趣的/2017</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/willsho">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#去中心化的三个维度"><span class="toc-number">1.</span> <span class="toc-text">去中心化的三个维度</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&text=去中心化的三个维度"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&is_video=false&description=去中心化的三个维度"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=去中心化的三个维度&body=Check out this article: http://willsho.gihub.io/2017/01/27/去中心化的三个维度/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&title=去中心化的三个维度"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://willsho.gihub.io/2017/01/27/去中心化的三个维度/&name=去中心化的三个维度&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 Will Wang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/willsho">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
